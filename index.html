@@ -19,6 +19,18 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 }
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -88,7 +100,7 @@
 			  				<h2>I 
 								  <span
 								     class="txt-rotate"
-								     data-period="2000"
+								     data-period="1000"
 								     data-rotate='[ "specialize in Data Science and Business Management", "love business and Strategy Management",  "would love to connect for business talks" ]'></span>
 								</h2>
 							</div>
@@ -220,8 +232,8 @@ and Time Series Analysis
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
-
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSda9GkMZuXdkPTJNKb4ada9z19K8O5pyyH6uNq7DdUejfgI7g/viewform?embedded=true" width="640" height="877" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="container">
+            <iframe class="responsive-iframe"  src="https://docs.google.com/forms/d/e/1FAIpQLSda9GkMZuXdkPTJNKb4ada9z19K8O5pyyH6uNq7DdUejfgI7g/viewform?embedded=true" width="640" height="877" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
           </div>
         </div>
 
