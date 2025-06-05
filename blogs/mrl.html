@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Understanding Matryoshka Representation Learning - Nishanth's Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><span>N</span>ishanth</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="../blog.html" class="nav-link"><span>← Back to Blog</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="ftco-section" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3">Understanding Matryoshka Representation Learning</h2>
+            <div class="meta mb-3">
+              <div>June 4, 2025</div>
+              <div>AI/ML</div>
+              <div>By Nishanth Chandran</div>
+            </div>
+            
+            <h3>Introduction</h3>
+            <p>Matryoshka Representation Learning (MRL) is an innovative approach to creating nested, multi-granular embeddings that can significantly reduce storage requirements while maintaining model performance. In this article, we'll explore how MRL works and its practical applications in large-scale video search systems.</p>
+
+            <h3>The Challenge of Embedding Storage</h3>
+            <p>In modern AI systems, especially those dealing with multi-modal data like video and text, storing embeddings for millions of items can be prohibitively expensive. Traditional approaches often require maintaining full-dimensional vectors for each item, leading to substantial storage costs and slower retrieval times.</p>
+
+            <h3>How MRL Works</h3>
+            <p>MRL takes inspiration from Russian nesting dolls (Matryoshka dolls), creating embeddings where:</p>
+            <ul>
+              <li>The representation is hierarchical, with each level containing more detailed information</li>
+              <li>Lower-dimensional representations are perfect subsets of higher-dimensional ones</li>
+              <li>Different granularities can be used for different tasks, optimizing the storage-performance trade-off</li>
+            </ul>
+
+            <h3>Implementing MRL</h3>
+            <p>The key steps in implementing MRL include:</p>
+            <ol>
+              <li>Designing a nested architecture where each layer builds upon the previous one</li>
+              <li>Training with multiple loss functions at different granularities</li>
+              <li>Implementing efficient storage and retrieval mechanisms</li>
+            </ol>
+
+            <h3>Real-world Application: Video Search</h3>
+            <p>In my work at Netradyne, we've successfully applied MRL to scale our video search capabilities across millions of videos. The nested structure allows us to:</p>
+            <ul>
+              <li>Perform quick initial searches with compact representations</li>
+              <li>Progressively refine results using more detailed embeddings</li>
+              <li>Maintain high accuracy while significantly reducing storage costs</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>MRL represents a significant advance in efficient representation learning, offering practical solutions for scaling AI systems. As we continue to work with larger datasets and more complex models, techniques like MRL will become increasingly important for building sustainable AI infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/scrollax.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

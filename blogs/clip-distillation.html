@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CLIP-KD: An Empirical Study of CLIP Model Distillation - Nishanth's Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><span>N</span>ishanth</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="../blog.html" class="nav-link"><span>← Back to Blog</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="ftco-section" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3">CLIP-KD: An Empirical Study of CLIP Model Distillation</h2>
+            <div class="meta mb-3">
+              <div>June 4, 2025</div>
+              <div>Edge AI</div>
+              <div>By Nishanth Chandran</div>
+            </div>
+            
+            <h3>Introduction</h3>
+            <p>CLIP (Contrastive Language-Image Pre-Training) is a powerful framework for aligning image and text embeddings. The paper "CLIP-KD: An Empirical Study of CLIP Model Distillation" explores methods to distill CLIP models for efficient deployment while preserving their performance. This blog summarizes the key findings and techniques presented in the paper.</p>
+
+            <h3>Contrastive Relational Distillation (CRD)</h3>
+            <p>CRD focuses on aligning the structured relationships among feature embeddings. By mimicking the teacher's well-structured semantic relations, the student model improves its feature representation quality. The distillation loss is based on KL-divergence between the teacher and student contrastive distributions.</p>
+
+            <h3>Feature Distillation (FD)</h3>
+            <p>FD aligns the feature embeddings of the teacher and student directly using Mean Squared Error (MSE) loss. This method reduces the knowledge gap and helps the student model achieve performance closer to the teacher.</p>
+
+            <h3>Masked Feature Distillation (MFD)</h3>
+            <p>MFD uses masked images as input to the student model, guided by the teacher's embeddings. This technique leverages contextual information to recover visual semantics effectively.</p>
+
+            <h3>Gradient Distillation (GD)</h3>
+            <p>GD aligns the gradient information between the teacher and student models. By ensuring gradient consistency, the student model learns to respond to input changes similarly to the teacher.</p>
+
+            <h3>Interactive Contrastive Learning (ICL)</h3>
+            <p>ICL facilitates interaction between the teacher and student by using the student's embeddings as anchors to contrast the teacher's embeddings. This approach maximizes mutual information between the two networks.</p>
+
+            <h3>Augmented Feature Distillation (AFD)</h3>
+            <p>AFD introduces fusion encoders to aggregate teacher and student embeddings, optimizing the visual-text embedding space for better performance.</p>
+
+            <h3>Conclusion</h3>
+            <p>The paper demonstrates that combining multiple distillation techniques can significantly improve the performance of student models while reducing computational requirements. These methods enable efficient deployment of CLIP models in resource-constrained environments.</p>
+
+            <p>For more details, refer to the original paper: <a href="https://arxiv.org/abs/2307.12732" target="_blank">CLIP-KD: An Empirical Study of CLIP Model Distillation</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/scrollax.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
